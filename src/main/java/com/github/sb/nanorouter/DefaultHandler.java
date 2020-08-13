@@ -6,7 +6,7 @@ import fi.iki.elonen.NanoHTTPD.Response.Status;
 /**
  * This is the default handler called when a request for an unrecognized Route/Method pair arrives.
  */
-public class DefaultHandler extends Handler {
+public class DefaultHandler implements Handler {
 
   public NanoHTTPD.Response handle(RequestContext ctx) {
     return NanoHTTPD.newFixedLengthResponse(
