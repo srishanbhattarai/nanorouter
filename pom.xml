@@ -7,7 +7,7 @@
   <groupId>com.github.sb</groupId>
   <artifactId>nanorouter</artifactId>
   <version>0.1.0</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>nanorouter</name>
   <url>https://github.com/srishanbhattarai/nanorouter</url>
