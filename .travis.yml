@@ -1,8 +1,13 @@
 language: java
+jdk:
+  - openjdk7
 
-before_script:
+install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 script:
-  - mvn compile -B
-  - mvn test -B
+  - mvn test -B; export MAVEN_RESULT=$?
+  - if [ "$MAVEN_RESULT" -ne 0 ]; then exit 1; fi
+
+after_success:
+  - mvn clean test
