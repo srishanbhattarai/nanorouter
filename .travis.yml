@@ -1,6 +1,7 @@
+dist: trusty
 language: java
 jdk:
-  - openjdk7
+- openjdk7
 
 install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
