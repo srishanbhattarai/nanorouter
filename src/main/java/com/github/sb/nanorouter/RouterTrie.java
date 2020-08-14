@@ -46,7 +46,6 @@ class RouterTrie {
 
   @Override
   public boolean equals(Object o) {
-    // since we hashed based on a string key, the Object o is a string as well.
     if (!(o instanceof RouterTrie)) return false;
 
     RouterTrie other = (RouterTrie) o;
